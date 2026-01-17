@@ -1,62 +1,34 @@
+# Sustainable Logistics Platform
 
-# SmartRoute-Optimized Delivery Routing & Time Prediction
+## 📌 Project Overview
+The logistics industry significantly contributes to global carbon emissions. This project introduces a **dual-objective routing engine** that calculates both the **'Fastest Route'** (Red) and a fuel-efficient **'Green Route'** (Green).
 
+By quantifying the trade-off between time and CO2 emissions, this system empowers logistics managers to optimize their supply chains for sustainability without compromising delivery efficiency.
 
+## 🚀 Key Features
+* **Dual-Objective Routing:** Dijkstra/A* algorithms for Time vs. Emissions.
+* **Real-World Data:** Uses **OpenStreetMap (OSMnx)** for accurate road networks.
+* **Sustainability Metrics:** Calculates **CO2 savings** and **Fuel Costs** per trip.
+* **Interactive Dashboard:** Live map visualization using React & Leaflet.
 
-SmartRoute is a logistics optimization system designed to streamline delivery operations by optimizing vehicle routes, predicting delivery times, and providing real-time operational insights. The system leverages OpenStreetMap data, machine learning models, and a dynamic dashboard for efficient fleet management.
+## 🛠️ Tech Stack
+* **Frontend:** React.js, Leaflet Maps
+* **Backend:** Python (FastAPI), NetworkX, OSMnx
+* **Database:** PostgreSQL
+* **Deployment:** Docker & Docker Compose
 
+## ⚙️ How to Run
+1.  **Clone the repo:**
+    ```bash
+    git clone [https://github.com/Alekhyaa726/Sustainable-Logistics-Platform.git](https://github.com/Alekhyaa726/Sustainable-Logistics-Platform.git)
+    cd Sustainable-Logistics-Platform
+    ```
+2.  **Run with Docker:**
+    ```bash
+    docker-compose up --build
+    ```
+3.  **Access:**
+    * Frontend: http://localhost:3000
+    * Backend: http://localhost:8000/docs
 
-## Features
-
-- **Optimized Route Planning**: Uses shortest path and Traveling Salesman Problem (TSP) algorithms to determine the best delivery routes.
-
-- **Predictive Delivery Time Estimation**: Trained machine learning model predicts delivery times based on distance, traffic, and weather conditions.
-
-- **Dynamic Vehicle Assignment**: Orders are grouped with vehicles based on capacity, priority, and weight.
-
-- **Interactive Dashboard**: Displays real-time route visualization, delivery metrics, and operational insights.
-
-- **Scalable and Containerized**: Dockerized deployment with FastAPI backend and React frontend.
-
-
-## Installation & Setup
-
-Steps to Run
-
-- Clone the repository
-```bash
-  git clone https://github.com/Vijay2101/SmartRoute-Optimized-Delivery-Routing-and-Time-Prediction.git
-  cd SmartRoute-Optimized-Delivery-Routing-and-Time-Prediction
-```
-
-- Start the services using Docker Compose
-```bash
-  docker-compose up --build
-```
-- Access the application
-  
-Backend API: ``` http://localhost:8000 ```
-
-Frontend Dashboard: ``` http://localhost:3000 ```
-    
-## Tech Stack
-
-- **Backend**: FastAPI, Python, OpenStreetMap (OSMnx), NetworkX
-- **Frontend**: React, JavaScript, Google Maps API
-- **Database**: PostgreSQL
-- **Machine Learning**: Scikit-learn, RandomForest, Pandas, NumPy
-- **Deployment**: Docker, Docker Compose
-
-
-## Screenshots
-
-![App Screenshot](https://github.com/Vijay2101/SmartRoute-Optimized-Delivery-Routing-and-Time-Prediction/blob/main/images/Screenshot%20from%202025-01-28%2011-25-18.png?raw=true)
-
-![App Screenshot](https://github.com/Vijay2101/SmartRoute-Optimized-Delivery-Routing-and-Time-Prediction/blob/main/images/Screenshot%20from%202025-01-28%2011-25-44.png?raw=true)
-
-![App Screenshot](https://github.com/Vijay2101/SmartRoute-Optimized-Delivery-Routing-and-Time-Prediction/blob/main/images/Screenshot%20from%202025-01-28%2011-26-06.png?raw=true)
-
-![App Screenshot](https://github.com/Vijay2101/SmartRoute-Optimized-Delivery-Routing-and-Time-Prediction/blob/main/images/Screenshot%20from%202025-01-28%2011-26-35.png?raw=true)
-
-![App Screenshot](https://github.com/Vijay2101/SmartRoute-Optimized-Delivery-Routing-and-Time-Prediction/blob/main/images/Screenshot%20from%202025-01-28%2011-26-43.png?raw=true)
-
+---
